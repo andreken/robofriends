@@ -38,12 +38,10 @@ class App extends Component {
 		fetch('https://jsonplaceholder.typicode.com/users')
 			.then(response => response.json())
 			.then(json => this.setState({robots: json}))
-		// Assign the correct height on the card list
-		// create an event to call the function every time the size of window changes
-		setTimeout(() => {
-			this.setCardListHeight();
+			// Assign the correct height on the card list
+			.then(result => this.setCardListHeight())
+			// create an event to call the function every time the size of window changes
 			window.addEventListener("resize", this.setCardListHeight.bind(this));
-		},500)
 	}
 
 	// This render method is called always when you call setState(), because shouldComponentUpdate always returns true by default

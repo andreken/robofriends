@@ -2,8 +2,8 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://andreken.github.io/robofriends",
   "dependencies": {
-    "gh-pages": "^1.1.0",
     "jquery": "^3.3.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
@@ -18,5 +18,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://andreken.github.io/robofriends"
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
 }
